@@ -1,4 +1,4 @@
-##Setup React Project from Scratch
+## Setup React Project from Scratch
 
 #### Run Locally
 
