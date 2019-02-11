@@ -19,7 +19,8 @@ module.exports = {
     compress: true,
     port: 3000,
     watchContentBase: true,
-    progress: false
+    progress: false,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -31,7 +32,19 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ["file-loader"]
-      }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            // options: {
+            //   modules: true
+            // }
+          }
+        ]
+      },
     ]
   }
 };

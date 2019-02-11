@@ -1,0 +1,22 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.layout-container {
+  margin: 0 20em;
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  height: 56px;
+  display: flex;
+}
+
+.content-container {
+  background: white;
+  padding: 16px;
+  flex: 1;
+}
